@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     environment {
@@ -12,6 +13,8 @@ pipeline {
     } 
     
         } 
+        
+    stage{
         
         stage('Build') {
             steps {
@@ -73,4 +76,4 @@ pipeline {
 		        }
             }
         }          
-    
+    }
